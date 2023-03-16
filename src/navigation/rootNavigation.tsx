@@ -1,10 +1,10 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-import {PointList} from '../screens/pointList/pointList';
+import {pointWelcome} from '../screens/pointWelcome/pointWelcome';
 
 export type RootNavigationProps = {
-  pointList: undefined;
+  pointWelcome: undefined;
   PointDetail: {
     uri: string;
   };
@@ -16,12 +16,12 @@ const RootNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="pointList"
+        initialRouteName="pointWelcome"
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="pointList" component={PointList} />
-        <Stack.Screen name="PointDetail" component={PointList} />
+        <Stack.Screen name="pointWelcome" component={pointWelcome} />
+        <Stack.Screen name="PointDetail" component={pointWelcome} />
       </Stack.Navigator>
     </NavigationContainer>
   );

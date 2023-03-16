@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import {styles} from './pointList.styleSheet';
+import {styles} from './pointWelcome.styleSheet';
 
-export const SkeletonPointList = () => {
+export const Skeleton = () => {
   return <View style={styles.container}></View>;
 };

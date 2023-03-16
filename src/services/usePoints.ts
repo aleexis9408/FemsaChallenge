@@ -24,7 +24,16 @@ export const usePoins = (): [GetData, ResponseDispatch] => {
 
 type GetData = () => void;
 interface ResponseDispatch {
-  data: any;
+  data: Product[];
   isLoading: boolean;
   isError: boolean;
+}
+
+export interface Product {
+  createdAt: string;
+  product: string;
+  points: number;
+  image: string;
+  is_redemption: boolean;
+  id: string;
 }

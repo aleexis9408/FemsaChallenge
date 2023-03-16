@@ -1,7 +1,7 @@
 import {useEffect, useMemo} from 'react';
-import {usePoins} from '../../services/usePoints';
+import {Product, usePoins} from '../../services/usePoints';
 
-export const usePointList = (): ResponseHook => {
+export const usePointWelcome = (): ResponseHook => {
   const [getData, {isLoading, isError, data}] = usePoins();
 
   useEffect(() => {
@@ -11,8 +11,8 @@ export const usePointList = (): ResponseHook => {
   const totalPoints = useMemo(() => {
     let total = 0;
     if (!isLoading && data) {
-      total = data?.reduce((valor, point) => {
-        return valor + point?.points ?? 0;
+      total = data?.reduce((valor: number, {points}) => {
+        return valor + points ?? 0;
       }, 0);
     }
     return total;
@@ -25,5 +25,5 @@ interface ResponseHook {
   totalPoints: number;
   isLoading: boolean;
   isError: boolean;
-  data: boolean;
+  data: Product[];
 }

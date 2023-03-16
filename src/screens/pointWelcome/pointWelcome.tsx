@@ -1,15 +1,17 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import {PageTemplate} from '../../common/templates/pageTemplate';
-import {styles} from './pointList.styleSheet';
-import {usePointList} from './usePointList.hook';
-import {SkeletonPointList} from './pointList.skeleton';
+import {styles} from './pointWelcome.styleSheet';
+import {usePointWelcome} from './usePointWelcome.hook';
+import {Skeleton} from './pointWelcome.skeleton';
+import {ProductList} from '../../common/molecules/productList';
+import {MothCurrent} from '../../utils/formateDate';
 
-export const PointList = () => {
-  const {totalPoints, isLoading} = usePointList();
+export const pointWelcome = () => {
+  const {totalPoints, isLoading, data} = usePointWelcome();
 
   if (isLoading) {
-    return <SkeletonPointList />;
+    return <Skeleton />;
   }
 
   return (
@@ -22,7 +24,9 @@ export const PointList = () => {
         <View style={styles.container_pointsCard}>
           <Text style={styles.container_pointsCard_title}>Tus puntos</Text>
           <View style={styles.container_pointsCard_contain}>
-            <Text style={styles.container_pointsCard_contain_moth}>Mes</Text>
+            <Text style={styles.container_pointsCard_contain_moth}>
+              {MothCurrent()}
+            </Text>
             <Text style={styles.container_pointsCard_contain_value}>
               {totalPoints} pts
             </Text>
@@ -30,7 +34,7 @@ export const PointList = () => {
         </View>
         <View style={styles.container_movement}>
           <Text style={styles.container_pointsCard_title}>TUS MOVIMIENTOS</Text>
-          <View></View>
+          <ProductList products={data} />
         </View>
       </View>
     </PageTemplate>

@@ -50,8 +50,5 @@ export const styles = StyleSheet.create({
   },
   container_movement: {
     marginTop: 20,
-    color: '#FFFFFF',
-    borderRadius: 20,
-    overflow: 'hidden',
   },
 });
