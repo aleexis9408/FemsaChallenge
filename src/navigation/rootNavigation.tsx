@@ -5,9 +5,14 @@ import {pointWelcome} from '../screens/pointWelcome/pointWelcome';
 import {PointDetail} from '../screens/pointDetail/pointDetail';
 import type {Product as ProductType} from '../services/usePoints';
 
+export enum RootNavigationRoute {
+  pointWelcomeRoute = 'pointWelcome',
+  PointDetailRoute = 'PointDetail',
+}
+
 export type RootNavigationProps = {
-  pointWelcome: undefined;
-  PointDetail: {
+  [RootNavigationRoute.pointWelcomeRoute]: undefined;
+  [RootNavigationRoute.PointDetailRoute]: {
     product: ProductType;
   };
 };
@@ -18,12 +23,18 @@ const RootNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="pointWelcome"
+        initialRouteName={RootNavigationRoute.pointWelcomeRoute}
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="pointWelcome" component={pointWelcome} />
-        <Stack.Screen name="PointDetail" component={PointDetail} />
+        <Stack.Screen
+          name={RootNavigationRoute.pointWelcomeRoute}
+          component={pointWelcome}
+        />
+        <Stack.Screen
+          name={RootNavigationRoute.PointDetailRoute}
+          component={PointDetail}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

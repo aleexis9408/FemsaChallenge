@@ -18,11 +18,10 @@ export const ProductList = ({products}: Props) => {
 
 export const styles = StyleSheet.create({
   productList: {
-    color: '#FFFFFF',
+    backgroundColor: 'yellow', //'#FFFFFF',
     borderRadius: 20,
     overflow: 'hidden',
-    marginTop: 20,
     paddingHorizontal: 10,
-    paddingTop: 20,
+    paddingTop: 10,
   },
 });

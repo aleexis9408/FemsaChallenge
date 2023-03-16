@@ -1,15 +1,26 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import type {Product as ProductType} from '../../services/usePoints';
 import {formatDate} from '../../utils/formateDate';
+import {formatPoint} from '../../utils/formatePoint';
+import {useNavigation} from '@react-navigation/native';
+import {RootNavigationRoute} from '../../navigation/rootNavigation';
 
 interface Props {
   product: ProductType;
 }
 
 export const Product = ({product}: Props) => {
+  const navigation = useNavigation();
+
+  const handleGoToDetail = () => {
+    navigation.navigate(RootNavigationRoute.PointDetailRoute, {
+      product,
+    });
+  };
+
   return (
-    <View style={styles.product}>
+    <TouchableOpacity style={styles.product} onPress={handleGoToDetail}>
       <Image
         style={styles.product_img}
         source={{
@@ -17,7 +28,9 @@ export const Product = ({product}: Props) => {
         }}
       />
       <View style={styles.product_info}>
-        <Text style={styles.product_info_name}>{product?.product}</Text>
+        <Text style={styles.product_info_name} numberOfLines={1}>
+          {product?.product} asas ads adssad ssas
+        </Text>
         <Text style={styles.product_info_date}>
           {formatDate(product?.createdAt)}
         </Text>
@@ -31,10 +44,12 @@ export const Product = ({product}: Props) => {
           }>
           {product?.is_redemption ? '-' : '+'}
         </Text>
-        <Text style={styles.product_point_value}>{product?.points}</Text>
+        <Text style={styles.product_point_value}>
+          {formatPoint(product?.points)}
+        </Text>
       </View>
       <Text style={styles.product_point_arrow}>{'>'}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -54,14 +69,15 @@ export const styles = StyleSheet.create({
   },
   product_info: {
     paddingLeft: 10,
-    flexGrow: 2,
+    flexGrow: 3,
     justifyContent: 'space-between',
+    width: '60%',
   },
   product_info_name: {
     fontWeight: '800',
     fontSize: 14,
     lineHeight: 19,
-    width: '100%',
+    maxWidth: '100%',
     paddingBottom: 7,
   },
   product_info_date: {
@@ -73,6 +89,7 @@ export const styles = StyleSheet.create({
   product_point: {
     flexGrow: 2,
     flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
   product_point_redemption_plus: {
     fontWeight: '800',
