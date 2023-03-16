@@ -48,7 +48,12 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 7,
   },
-  container_movement: {
-    marginTop: 20,
+  container_pointsCard_title_movement: {
+    fontWeight: '800',
+    fontSize: 14,
+    lineHeight: 19,
+    textTransform: 'uppercase',
+    color: '#9B9898',
+    marginVertical: 20,
   },
 });

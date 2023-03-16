@@ -2,11 +2,13 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {pointWelcome} from '../screens/pointWelcome/pointWelcome';
+import {PointDetail} from '../screens/pointDetail/pointDetail';
+import type {Product as ProductType} from '../services/usePoints';
 
 export type RootNavigationProps = {
   pointWelcome: undefined;
   PointDetail: {
-    uri: string;
+    product: ProductType;
   };
 };
 
@@ -21,7 +23,7 @@ const RootNavigation = () => {
           headerShown: false,
         }}>
         <Stack.Screen name="pointWelcome" component={pointWelcome} />
-        <Stack.Screen name="PointDetail" component={pointWelcome} />
+        <Stack.Screen name="PointDetail" component={PointDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );

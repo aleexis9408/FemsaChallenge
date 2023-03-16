@@ -11,7 +11,10 @@ export const usePointWelcome = (): ResponseHook => {
   const totalPoints = useMemo(() => {
     let total = 0;
     if (!isLoading && data) {
-      total = data?.reduce((valor: number, {points}) => {
+      total = data?.reduce((valor: number, {points, is_redemption}) => {
+        if (is_redemption) {
+          return valor - points ?? 0;
+        }
         return valor + points ?? 0;
       }, 0);
     }
