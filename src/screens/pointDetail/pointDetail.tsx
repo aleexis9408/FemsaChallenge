@@ -73,6 +73,7 @@ export const styles = StyleSheet.create({
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.xl,
     lineHeight: 24,
+    color: typography.color.black,
   },
   pointDetail_body: {
     flex: 1,
@@ -97,7 +98,7 @@ export const styles = StyleSheet.create({
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.sm,
     lineHeight: 19,
-    color: '#9B9898',
+    color: typography.color.gray,
     paddingTop: 32,
     paddingBottom: 20,
   },
@@ -106,6 +107,7 @@ export const styles = StyleSheet.create({
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.lg,
     lineHeight: 21,
+    color: typography.color.black,
   },
   pointDetail_body_point: {
     fontFamily: typography.fontFamily.avenir,
@@ -113,6 +115,7 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.xl,
     lineHeight: 32,
     marginBottom: 20,
+    color: typography.color.black,
   },
   pointDetail_footer: {
     flex: 0.1,

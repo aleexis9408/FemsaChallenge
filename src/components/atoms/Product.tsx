@@ -84,6 +84,7 @@ export const styles = StyleSheet.create({
     lineHeight: 19,
     maxWidth: '100%',
     paddingBottom: 7,
+    color: typography.color.black,
   },
   product_info_date: {
     fontFamily: typography.fontFamily.avenir,
@@ -91,6 +92,7 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.xs,
     lineHeight: 16,
     width: '100%',
+    color: typography.color.black,
   },
   product_point: {
     flexGrow: 2,
@@ -116,11 +118,13 @@ export const styles = StyleSheet.create({
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.lg,
     lineHeight: 21,
+    color: typography.color.black,
   },
   product_point_arrow: {
     fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.lg,
     paddingLeft: 10,
+    color: typography.color.black,
   },
 });

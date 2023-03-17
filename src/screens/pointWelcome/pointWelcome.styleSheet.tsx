@@ -35,12 +35,14 @@ export const styles = StyleSheet.create({
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.xl,
     lineHeight: 27,
+    color: typography.color.grayblack,
   },
   container_welcome_subtitle: {
     fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.normal,
     fontSize: typography.fontSizes.lg,
     lineHeight: 21,
+    color: typography.color.grayblack,
   },
   container_pointsCard: {
     marginTop: 16,
@@ -51,7 +53,7 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.sm,
     lineHeight: 19,
     textTransform: 'uppercase',
-    color: '#9B9898',
+    color: typography.color.gray,
   },
   container_pointsCard_contain: {
     ...BOX_SHADOW,
@@ -85,7 +87,7 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.sm,
     lineHeight: 19,
     textTransform: 'uppercase',
-    color: '#9B9898',
+    color: typography.color.gray,
     marginVertical: 20,
   },
 

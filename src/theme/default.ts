@@ -25,6 +25,11 @@ export const typography = {
   fontFamily: {
     avenir: 'Avenir',
   },
+  color: {
+    black: '#000000',
+    grayblack: '#020202',
+    gray: '#9B9898',
+  },
 };
 
 export const BOX_SHADOW = {
