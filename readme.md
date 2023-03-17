@@ -4,6 +4,7 @@ In this challenge you're going to create a basic app with React Native
 
 ### Application Android Demo:
 
+https://install.appcenter.ms/users/aleexis9408.edu.co/apps/femsa-changelle/distribution_groups/public
 
 ### Application Screenshot:
 
