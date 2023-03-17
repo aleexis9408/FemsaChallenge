@@ -2,8 +2,19 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
+    width: '100%',
+    flexDirection: 'column',
     paddingTop: 20,
     paddingHorizontal: 20,
+  },
+  container_header: {
+    flexGrow: 2,
+  },
+  container_body: {
+    flexGrow: 2,
+  },
+  container_footer: {
+    flexGrow: 1,
   },
   container_welcome_title: {
     fontWeight: '800',
@@ -55,5 +66,13 @@ export const styles = StyleSheet.create({
     textTransform: 'uppercase',
     color: '#9B9898',
     marginVertical: 20,
+  },
+  container_footer_btns: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  container_footer_btn: {
+    width: '48%',
   },
 });

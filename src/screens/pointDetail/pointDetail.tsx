@@ -1,12 +1,14 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {PageTemplate} from '../../components/templates/pageTemplate';
-import {useRoute} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {formatDate} from '../../utils/formateDate';
 import {formatPoint} from '../../utils/formatePoint';
+import {Button} from '../../components/atoms/Button';
 
 export const PointDetail = () => {
   const route = useRoute();
+  const navigation = useNavigation();
   const {product} = route.params;
   return (
     <PageTemplate>
@@ -33,6 +35,7 @@ export const PointDetail = () => {
           <Text style={styles.pointDetail_body_point}>
             {formatPoint(product?.points)} puntos
           </Text>
+          <Button text="Aceptar" hadleOnPress={() => navigation.goBack()} />
         </View>
       </View>
     </PageTemplate>
@@ -47,7 +50,7 @@ export const styles = StyleSheet.create({
   pointDetail_header: {
     backgroundColor: '#CFD6FF',
     width: '100%',
-    height: 120,
+    height: 100,
     paddingHorizontal: 20,
     justifyContent: 'flex-end',
     paddingBottom: 20,
@@ -84,5 +87,6 @@ export const styles = StyleSheet.create({
     fontWeight: '800',
     fontSize: 24,
     lineHeight: 32,
+    marginBottom: 20,
   },
 });

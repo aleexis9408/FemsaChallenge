@@ -5,9 +5,17 @@ import {
   StatusBar,
   useColorScheme,
 } from 'react-native';
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-export const PageTemplate = ({children}): JSX.Element => {
+interface Props {
+  children: React.ReactNode;
+  scrollview?: boolean;
+}
+
+export const PageTemplate = ({
+  children,
+  scrollview = true,
+}: Props): JSX.Element => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -20,11 +28,15 @@ export const PageTemplate = ({children}): JSX.Element => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        {children}
-      </ScrollView>
+      {scrollview ? (
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={backgroundStyle}>
+          {children}
+        </ScrollView>
+      ) : (
+        children
+      )}
     </SafeAreaView>
   );
 };

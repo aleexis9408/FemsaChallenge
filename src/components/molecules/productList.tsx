@@ -18,7 +18,7 @@ export const ProductList = ({products}: Props) => {
 
 export const styles = StyleSheet.create({
   productList: {
-    backgroundColor: 'yellow', //'#FFFFFF',
+    backgroundColor: '#FFFFFF',
     borderRadius: 20,
     overflow: 'hidden',
     paddingHorizontal: 10,
