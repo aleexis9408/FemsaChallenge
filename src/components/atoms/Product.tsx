@@ -5,6 +5,7 @@ import {formatDate} from '../../utils/formateDate';
 import {formatPoint} from '../../utils/formatePoint';
 import {useNavigation} from '@react-navigation/native';
 import {RootNavigationRoute} from '../../navigation/rootNavigation';
+import {typography} from '../../theme/default';
 
 interface Props {
   product: ProductType;
@@ -29,7 +30,7 @@ export const Product = ({product}: Props) => {
       />
       <View style={styles.product_info}>
         <Text style={styles.product_info_name} numberOfLines={1}>
-          {product?.product} asas ads adssad ssas
+          {product?.product}
         </Text>
         <Text style={styles.product_info_date}>
           {formatDate(product?.createdAt)}
@@ -71,18 +72,18 @@ export const styles = StyleSheet.create({
     paddingLeft: 10,
     flexGrow: 3,
     justifyContent: 'space-between',
-    width: '60%',
+    width: '45%',
   },
   product_info_name: {
-    fontWeight: '800',
-    fontSize: 14,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xs,
     lineHeight: 19,
     maxWidth: '100%',
     paddingBottom: 7,
   },
   product_info_date: {
-    fontWeight: '400',
-    fontSize: 12,
+    fontWeight: typography.fontWeights.normal,
+    fontSize: typography.fontSizes['2xs'],
     lineHeight: 16,
     width: '100%',
   },
@@ -92,25 +93,25 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   product_point_redemption_plus: {
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
     color: '#00B833',
   },
   product_point_redemption_minus: {
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
     color: '#FF0000',
   },
   product_point_value: {
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
   },
   product_point_arrow: {
-    fontWeight: '800',
-    fontSize: 18,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.md,
     paddingLeft: 10,
   },
 });

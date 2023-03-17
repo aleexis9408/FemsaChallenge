@@ -5,6 +5,7 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import {formatDate} from '../../utils/formateDate';
 import {formatPoint} from '../../utils/formatePoint';
 import {Button} from '../../components/atoms/Button';
+import { typography } from '../../theme/default';
 
 export const PointDetail = () => {
   const route = useRoute();
@@ -56,8 +57,8 @@ export const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   pointDetail_header_title: {
-    fontWeight: '800',
-    fontSize: 24,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xl,
     lineHeight: 24,
   },
   pointDetail_body: {
@@ -72,20 +73,20 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
   pointDetail_body_titles: {
-    fontWeight: '800',
-    fontSize: 14,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xs,
     lineHeight: 19,
     color: '#9B9898',
     paddingVertical: 10,
   },
   pointDetail_body_date: {
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
   },
   pointDetail_body_point: {
-    fontWeight: '800',
-    fontSize: 24,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xl,
     lineHeight: 32,
     marginBottom: 20,
   },

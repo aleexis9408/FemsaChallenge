@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {BOX_SHADOW, BOX_SHADOW_LOW, typography} from '../../theme/default';
 
 export const styles = StyleSheet.create({
   container: {
@@ -17,26 +18,27 @@ export const styles = StyleSheet.create({
     flexGrow: 1,
   },
   container_welcome_title: {
-    fontWeight: '800',
-    fontSize: 20,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.lg,
     lineHeight: 27,
   },
   container_welcome_subtitle: {
-    fontWeight: '400',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.normal,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
   },
   container_pointsCard: {
     marginTop: 20,
   },
   container_pointsCard_title: {
-    fontWeight: '800',
-    fontSize: 14,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xs,
     lineHeight: 19,
     textTransform: 'uppercase',
     color: '#9B9898',
   },
   container_pointsCard_contain: {
+    ...BOX_SHADOW,
     backgroundColor: '#334FFA',
     borderRadius: 20,
     overflow: 'hidden',
@@ -47,21 +49,21 @@ export const styles = StyleSheet.create({
   },
   container_pointsCard_contain_moth: {
     color: '#FFFFFF',
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.md,
     lineHeight: 22,
   },
   container_pointsCard_contain_value: {
     color: '#FFFFFF',
-    fontWeight: '800',
-    fontSize: 32,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes['3xl'],
     lineHeight: 43,
     textAlign: 'center',
     marginTop: 7,
   },
   container_pointsCard_title_movement: {
-    fontWeight: '800',
-    fontSize: 14,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.xs,
     lineHeight: 19,
     textTransform: 'uppercase',
     color: '#9B9898',

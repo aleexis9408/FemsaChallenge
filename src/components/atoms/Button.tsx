@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   ViewStyle,
 } from 'react-native';
+import {typography} from '../../theme/default';
 
 interface Props {
   text: string;
@@ -40,8 +41,8 @@ export const styles = StyleSheet.create({
   button_text: {
     color: 'white',
     textAlign: 'center',
-    fontWeight: '800',
-    fontSize: 16,
+    fontWeight: typography.fontWeights.extrabold,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 21,
   },
 });
