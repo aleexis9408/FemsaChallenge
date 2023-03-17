@@ -5,19 +5,14 @@ import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
 export const Skeleton = () => {
   return (
-    <SkeletonPlaceholder borderRadius={4}>
-      <View testID="skeleton" style={styles.container}>
-        <SkeletonPlaceholder.Item style={styles.container}>
-          <SkeletonPlaceholder.Item
-            style={styles.container_pointsCard_contain}
-            height={150}
-          />
+    <View testID="skeleton" style={styles.container}>
+      <SkeletonPlaceholder borderRadius={4}>
+        <SkeletonPlaceholder.Item>
+          <SkeletonPlaceholder.Item height={'15%'} marginBottom={20} />
+          <SkeletonPlaceholder.Item height={'60%'} marginBottom={20} />
+          <SkeletonPlaceholder.Item height={'20%'} />
         </SkeletonPlaceholder.Item>
-        <SkeletonPlaceholder.Item
-          style={styles.container_body}
-          height={'60%'}
-        />
-      </View>
-    </SkeletonPlaceholder>
+      </SkeletonPlaceholder>
+    </View>
   );
 };
