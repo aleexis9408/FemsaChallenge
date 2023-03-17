@@ -20,6 +20,7 @@ export const PageTemplate = ({
 
   const backgroundStyle = {
     backgroundColor: Colors.lighter,
+    flex: 1,
   };
 
   return (
@@ -30,8 +31,8 @@ export const PageTemplate = ({
       />
       {scrollview ? (
         <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={backgroundStyle}>
+          contentContainerStyle={backgroundStyle}
+          contentInsetAdjustmentBehavior="automatic">
           {children}
         </ScrollView>
       ) : (

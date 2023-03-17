@@ -21,6 +21,7 @@ export const PointDetail = () => {
           <View style={styles.pointDetail_body_img_shadow}>
             <Image
               testID="pointDetailImage"
+              resizeMode="cover"
               style={styles.pointDetail_body_img}
               source={{
                 uri: product?.image,
@@ -39,6 +40,8 @@ export const PointDetail = () => {
           <Text style={styles.pointDetail_body_point}>
             {formatPoint(product?.points)} puntos
           </Text>
+        </View>
+        <View style={styles.pointDetail_footer}>
           <Button
             text="Aceptar"
             hadleOnPress={() => navigation.canGoBack() && navigation.goBack()}
@@ -52,7 +55,10 @@ export const PointDetail = () => {
 export const styles = StyleSheet.create({
   pointDetail: {
     flex: 1,
+    height: '100%',
     backgroundColor: 'white',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
   pointDetail_header: {
     backgroundColor: '#CFD6FF',
@@ -69,18 +75,22 @@ export const styles = StyleSheet.create({
     lineHeight: 24,
   },
   pointDetail_body: {
+    flex: 1,
     paddingVertical: 20,
     paddingHorizontal: 30,
+    flexGrow: 1,
   },
   pointDetail_body_img_shadow: {
+    flexGrow: 1,
     ...BOX_SHADOW,
   },
   pointDetail_body_img: {
     width: '100%',
-    height: 300,
+    minHeight: 250,
     paddingVertical: 10,
     overflow: 'hidden',
     borderRadius: 10,
+    flexGrow: 2,
   },
   pointDetail_body_titles: {
     fontFamily: typography.fontFamily.avenir,
@@ -88,7 +98,8 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.sm,
     lineHeight: 19,
     color: '#9B9898',
-    paddingVertical: 10,
+    paddingTop: 32,
+    paddingBottom: 20,
   },
   pointDetail_body_date: {
     fontFamily: typography.fontFamily.avenir,
@@ -102,5 +113,10 @@ export const styles = StyleSheet.create({
     fontSize: typography.fontSizes.xl,
     lineHeight: 32,
     marginBottom: 20,
+  },
+  pointDetail_footer: {
+    flex: 0.1,
+    paddingVertical: 20,
+    paddingHorizontal: 30,
   },
 });

@@ -3,6 +3,7 @@ import {BOX_SHADOW, typography} from '../../theme/default';
 
 export const styles = StyleSheet.create({
   container: {
+    flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'stretch',
@@ -10,23 +11,30 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   container_header: {
+    minHeight: 130,
     flexDirection: 'column',
-    width: '100%',
-    height: '40%',
   },
   container_body: {
-    height: 310,
+    flexDirection: 'column',
+    flexGrow: 3,
+  },
+  container_body_scroll: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 20,
+    overflow: 'hidden',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
   },
   container_footer: {
-    flex: 0.1,
     marginTop: 20,
+    marginBottom: 20,
   },
   container_welcome_title: {
     fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.xl,
     lineHeight: 27,
-    fontFamily: typography.fontFamily.avenir,
   },
   container_welcome_subtitle: {
     fontFamily: typography.fontFamily.avenir,
@@ -80,14 +88,7 @@ export const styles = StyleSheet.create({
     color: '#9B9898',
     marginVertical: 20,
   },
-  container_body_scroll: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 20,
-    overflow: 'hidden',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    flexGrow: 2,
-  },
+
   container_footer_btns: {
     flexDirection: 'row',
     justifyContent: 'space-between',
