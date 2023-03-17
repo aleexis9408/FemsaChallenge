@@ -5,10 +5,8 @@ In this challenge you're going to create a basic app with React Native
 
 ### Application Android Demo:
 
+<img src="/screenshot/screensht1.png" width=300 /> <img src="/screenshot/screensht2.png" width=300 /> <img src="/screenshot/screensht3.png" width=300 />
 
-![Alt text](/screenshot/screensht1.png?raw=true "screensht1")
-![Alt text](/screenshot/screensht2.png?raw=true "screensht2")
-![Alt text](/screenshot/screensht3.png?raw=true "screensht3")
 
 ## Update Snapshot Test
 
