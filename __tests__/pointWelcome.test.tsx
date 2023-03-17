@@ -2,7 +2,6 @@ import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import {PointWelcome} from '../src/screens/pointWelcome/pointWelcome';
 import {NavigationWrapper} from '../__mocks__/navigation-wrapper';
-import {usePoins} from '';
 
 describe('PointWelcome', () => {
   test('renders correctly', () => {

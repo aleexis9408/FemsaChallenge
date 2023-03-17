@@ -13,9 +13,9 @@ export const PointWelcome = () => {
   const {totalPoints, isLoading, data, setTypePoint, typePoint} =
     usePointWelcome();
 
-  /* if (isLoading) {
+  if (isLoading) {
     return <Skeleton />;
-  } */
+  }
 
   return (
     <PageTemplate scrollview={false}>

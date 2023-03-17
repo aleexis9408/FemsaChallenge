@@ -105,24 +105,28 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
               <View
                 style={
                   {
+                    "alignItems": "stretch",
                     "flexDirection": "column",
+                    "justifyContent": "space-between",
                     "paddingHorizontal": 20,
                     "paddingTop": 20,
-                    "width": "100%",
                   }
                 }
               >
                 <View
                   style={
                     {
-                      "flexGrow": 2,
+                      "flexDirection": "column",
+                      "height": "40%",
+                      "width": "100%",
                     }
                   }
                 >
                   <Text
                     style={
                       {
-                        "fontSize": 18,
+                        "fontFamily": "Avenir",
+                        "fontSize": 20,
                         "fontWeight": "800",
                         "lineHeight": 27,
                       }
@@ -133,7 +137,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                   <Text
                     style={
                       {
-                        "fontSize": 14,
+                        "fontFamily": "Avenir",
+                        "fontSize": 18,
                         "fontWeight": "400",
                         "lineHeight": 21,
                       }
@@ -144,7 +149,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                   <View
                     style={
                       {
-                        "marginTop": 20,
+                        "marginTop": 16,
                       }
                     }
                   >
@@ -152,7 +157,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       style={
                         {
                           "color": "#9B9898",
-                          "fontSize": 12,
+                          "fontFamily": "Avenir",
+                          "fontSize": 14,
                           "fontWeight": "800",
                           "lineHeight": 19,
                           "textTransform": "uppercase",
@@ -171,7 +177,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                           "marginTop": 20,
                           "overflow": "hidden",
                           "padding": 20,
-                          "paddingBottom": 50,
+                          "paddingBottom": 30,
                           "shadowColor": "#000000",
                           "shadowOffset": {
                             "height": 4,
@@ -186,7 +192,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                         style={
                           {
                             "color": "#FFFFFF",
-                            "fontSize": 16,
+                            "fontFamily": "Avenir",
+                            "fontSize": 18,
                             "fontWeight": "800",
                             "lineHeight": 22,
                           }
@@ -198,6 +205,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                         style={
                           {
                             "color": "#FFFFFF",
+                            "fontFamily": "Avenir",
                             "fontSize": 30,
                             "fontWeight": "800",
                             "lineHeight": 43,
@@ -215,7 +223,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                 <View
                   style={
                     {
-                      "flexGrow": 2,
+                      "height": 310,
                     }
                   }
                 >
@@ -223,7 +231,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                     style={
                       {
                         "color": "#9B9898",
-                        "fontSize": 12,
+                        "fontFamily": "Avenir",
+                        "fontSize": 14,
                         "fontWeight": "800",
                         "lineHeight": 19,
                         "marginVertical": 20,
@@ -233,7 +242,18 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                   >
                     TUS MOVIMIENTOS
                   </Text>
-                  <RCTScrollView>
+                  <RCTScrollView
+                    style={
+                      {
+                        "backgroundColor": "#FFFFFF",
+                        "borderRadius": 20,
+                        "flexGrow": 2,
+                        "overflow": "hidden",
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 5,
+                      }
+                    }
+                  >
                     <View>
                       <View
                         style={
@@ -315,7 +335,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                               numberOfLines={1}
                               style={
                                 {
-                                  "fontSize": 12,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 14,
                                   "fontWeight": "800",
                                   "lineHeight": 19,
                                   "maxWidth": "100%",
@@ -328,7 +349,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             <Text
                               style={
                                 {
-                                  "fontSize": 10,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 12,
                                   "fontWeight": "400",
                                   "lineHeight": 16,
                                   "width": "100%",
@@ -351,7 +373,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                               style={
                                 {
                                   "color": "#00B833",
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -362,7 +385,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             <Text
                               style={
                                 {
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -374,7 +398,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                           <Text
                             style={
                               {
-                                "fontSize": 16,
+                                "fontFamily": "Avenir",
+                                "fontSize": 18,
                                 "fontWeight": "800",
                                 "paddingLeft": 10,
                               }
@@ -452,7 +477,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                               numberOfLines={1}
                               style={
                                 {
-                                  "fontSize": 12,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 14,
                                   "fontWeight": "800",
                                   "lineHeight": 19,
                                   "maxWidth": "100%",
@@ -465,7 +491,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             <Text
                               style={
                                 {
-                                  "fontSize": 10,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 12,
                                   "fontWeight": "400",
                                   "lineHeight": 16,
                                   "width": "100%",
@@ -486,7 +513,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                               style={
                                 {
                                   "color": "#FF0000",
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -497,7 +525,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             <Text
                               style={
                                 {
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -509,7 +538,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                           <Text
                             style={
                               {
-                                "fontSize": 16,
+                                "fontFamily": "Avenir",
+                                "fontSize": 18,
                                 "fontWeight": "800",
                                 "paddingLeft": 10,
                               }
@@ -525,14 +555,14 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                 <View
                   style={
                     {
-                      "flexGrow": 1,
+                      "flex": 0.1,
+                      "marginTop": 20,
                     }
                   }
                 >
                   <View
                     style={
                       {
-                        "flex": 1,
                         "flexDirection": "row",
                         "justifyContent": "space-between",
                       }
@@ -585,7 +615,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                           [
                             {
                               "color": "white",
-                              "fontSize": 14,
+                              "fontFamily": "Avenir",
+                              "fontSize": 18,
                               "fontWeight": "800",
                               "lineHeight": 21,
                               "textAlign": "center",
@@ -644,7 +675,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                           [
                             {
                               "color": "white",
-                              "fontSize": 14,
+                              "fontFamily": "Avenir",
+                              "fontSize": 18,
                               "fontWeight": "800",
                               "lineHeight": 21,
                               "textAlign": "center",
@@ -771,6 +803,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       <Text
                         style={
                           {
+                            "fontFamily": "Avenir",
                             "fontSize": 20,
                             "fontWeight": "800",
                             "lineHeight": 24,
@@ -809,7 +842,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                         style={
                           {
                             "color": "#9B9898",
-                            "fontSize": 12,
+                            "fontFamily": "Avenir",
+                            "fontSize": 14,
                             "fontWeight": "800",
                             "lineHeight": 19,
                             "paddingVertical": 10,
@@ -821,7 +855,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       <Text
                         style={
                           {
-                            "fontSize": 14,
+                            "fontFamily": "Avenir",
+                            "fontSize": 18,
                             "fontWeight": "800",
                             "lineHeight": 21,
                           }
@@ -834,7 +869,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                         style={
                           {
                             "color": "#9B9898",
-                            "fontSize": 12,
+                            "fontFamily": "Avenir",
+                            "fontSize": 14,
                             "fontWeight": "800",
                             "lineHeight": 19,
                             "paddingVertical": 10,
@@ -846,6 +882,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       <Text
                         style={
                           {
+                            "fontFamily": "Avenir",
                             "fontSize": 20,
                             "fontWeight": "800",
                             "lineHeight": 32,
@@ -903,7 +940,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             [
                               {
                                 "color": "white",
-                                "fontSize": 14,
+                                "fontFamily": "Avenir",
+                                "fontSize": 18,
                                 "fontWeight": "800",
                                 "lineHeight": 21,
                                 "textAlign": "center",
@@ -1033,24 +1071,28 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
               <View
                 style={
                   {
+                    "alignItems": "stretch",
                     "flexDirection": "column",
+                    "justifyContent": "space-between",
                     "paddingHorizontal": 20,
                     "paddingTop": 20,
-                    "width": "100%",
                   }
                 }
               >
                 <View
                   style={
                     {
-                      "flexGrow": 2,
+                      "flexDirection": "column",
+                      "height": "40%",
+                      "width": "100%",
                     }
                   }
                 >
                   <Text
                     style={
                       {
-                        "fontSize": 18,
+                        "fontFamily": "Avenir",
+                        "fontSize": 20,
                         "fontWeight": "800",
                         "lineHeight": 27,
                       }
@@ -1061,7 +1103,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                   <Text
                     style={
                       {
-                        "fontSize": 14,
+                        "fontFamily": "Avenir",
+                        "fontSize": 18,
                         "fontWeight": "400",
                         "lineHeight": 21,
                       }
@@ -1072,7 +1115,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                   <View
                     style={
                       {
-                        "marginTop": 20,
+                        "marginTop": 16,
                       }
                     }
                   >
@@ -1080,7 +1123,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                       style={
                         {
                           "color": "#9B9898",
-                          "fontSize": 12,
+                          "fontFamily": "Avenir",
+                          "fontSize": 14,
                           "fontWeight": "800",
                           "lineHeight": 19,
                           "textTransform": "uppercase",
@@ -1099,7 +1143,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                           "marginTop": 20,
                           "overflow": "hidden",
                           "padding": 20,
-                          "paddingBottom": 50,
+                          "paddingBottom": 30,
                           "shadowColor": "#000000",
                           "shadowOffset": {
                             "height": 4,
@@ -1114,7 +1158,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                         style={
                           {
                             "color": "#FFFFFF",
-                            "fontSize": 16,
+                            "fontFamily": "Avenir",
+                            "fontSize": 18,
                             "fontWeight": "800",
                             "lineHeight": 22,
                           }
@@ -1126,6 +1171,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                         style={
                           {
                             "color": "#FFFFFF",
+                            "fontFamily": "Avenir",
                             "fontSize": 30,
                             "fontWeight": "800",
                             "lineHeight": 43,
@@ -1143,7 +1189,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                 <View
                   style={
                     {
-                      "flexGrow": 2,
+                      "height": 310,
                     }
                   }
                 >
@@ -1151,7 +1197,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                     style={
                       {
                         "color": "#9B9898",
-                        "fontSize": 12,
+                        "fontFamily": "Avenir",
+                        "fontSize": 14,
                         "fontWeight": "800",
                         "lineHeight": 19,
                         "marginVertical": 20,
@@ -1161,7 +1208,18 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                   >
                     TUS MOVIMIENTOS
                   </Text>
-                  <RCTScrollView>
+                  <RCTScrollView
+                    style={
+                      {
+                        "backgroundColor": "#FFFFFF",
+                        "borderRadius": 20,
+                        "flexGrow": 2,
+                        "overflow": "hidden",
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 5,
+                      }
+                    }
+                  >
                     <View>
                       <View
                         style={
@@ -1243,7 +1301,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                               numberOfLines={1}
                               style={
                                 {
-                                  "fontSize": 12,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 14,
                                   "fontWeight": "800",
                                   "lineHeight": 19,
                                   "maxWidth": "100%",
@@ -1256,7 +1315,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                             <Text
                               style={
                                 {
-                                  "fontSize": 10,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 12,
                                   "fontWeight": "400",
                                   "lineHeight": 16,
                                   "width": "100%",
@@ -1279,7 +1339,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                               style={
                                 {
                                   "color": "#00B833",
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -1290,7 +1351,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                             <Text
                               style={
                                 {
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -1302,7 +1364,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                           <Text
                             style={
                               {
-                                "fontSize": 16,
+                                "fontFamily": "Avenir",
+                                "fontSize": 18,
                                 "fontWeight": "800",
                                 "paddingLeft": 10,
                               }
@@ -1380,7 +1443,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                               numberOfLines={1}
                               style={
                                 {
-                                  "fontSize": 12,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 14,
                                   "fontWeight": "800",
                                   "lineHeight": 19,
                                   "maxWidth": "100%",
@@ -1393,7 +1457,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                             <Text
                               style={
                                 {
-                                  "fontSize": 10,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 12,
                                   "fontWeight": "400",
                                   "lineHeight": 16,
                                   "width": "100%",
@@ -1414,7 +1479,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                               style={
                                 {
                                   "color": "#FF0000",
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -1425,7 +1491,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                             <Text
                               style={
                                 {
-                                  "fontSize": 14,
+                                  "fontFamily": "Avenir",
+                                  "fontSize": 18,
                                   "fontWeight": "800",
                                   "lineHeight": 21,
                                 }
@@ -1437,7 +1504,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                           <Text
                             style={
                               {
-                                "fontSize": 16,
+                                "fontFamily": "Avenir",
+                                "fontSize": 18,
                                 "fontWeight": "800",
                                 "paddingLeft": 10,
                               }
@@ -1453,14 +1521,14 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                 <View
                   style={
                     {
-                      "flexGrow": 1,
+                      "flex": 0.1,
+                      "marginTop": 20,
                     }
                   }
                 >
                   <View
                     style={
                       {
-                        "flex": 1,
                         "flexDirection": "row",
                         "justifyContent": "space-between",
                       }
@@ -1513,7 +1581,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                           [
                             {
                               "color": "white",
-                              "fontSize": 14,
+                              "fontFamily": "Avenir",
+                              "fontSize": 18,
                               "fontWeight": "800",
                               "lineHeight": 21,
                               "textAlign": "center",
@@ -1572,7 +1641,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                           [
                             {
                               "color": "white",
-                              "fontSize": 14,
+                              "fontFamily": "Avenir",
+                              "fontSize": 18,
                               "fontWeight": "800",
                               "lineHeight": 21,
                               "textAlign": "center",

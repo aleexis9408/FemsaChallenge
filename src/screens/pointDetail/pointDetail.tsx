@@ -5,7 +5,7 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import {formatDate} from '../../utils/formateDate';
 import {formatPoint} from '../../utils/formatePoint';
 import {Button} from '../../components/atoms/Button';
-import {typography} from '../../theme/default';
+import {BOX_SHADOW, typography} from '../../theme/default';
 
 export const PointDetail = () => {
   const route = useRoute();
@@ -18,13 +18,15 @@ export const PointDetail = () => {
           <Text style={styles.pointDetail_header_title}>{product.product}</Text>
         </View>
         <View style={styles.pointDetail_body}>
-          <Image
-            testID="pointDetailImage"
-            style={styles.pointDetail_body_img}
-            source={{
-              uri: product?.image,
-            }}
-          />
+          <View style={styles.pointDetail_body_img_shadow}>
+            <Image
+              testID="pointDetailImage"
+              style={styles.pointDetail_body_img}
+              source={{
+                uri: product?.image,
+              }}
+            />
+          </View>
           <Text style={styles.pointDetail_body_titles}>
             Detalles del producto:
           </Text>
@@ -69,6 +71,9 @@ export const styles = StyleSheet.create({
   pointDetail_body: {
     paddingVertical: 20,
     paddingHorizontal: 30,
+  },
+  pointDetail_body_img_shadow: {
+    ...BOX_SHADOW,
   },
   pointDetail_body_img: {
     width: '100%',
