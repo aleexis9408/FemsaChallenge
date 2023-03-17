@@ -61,6 +61,7 @@ export const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   pointDetail_header_title: {
+    fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.xl,
     lineHeight: 24,
@@ -77,18 +78,21 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
   pointDetail_body_titles: {
+    fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
-    fontSize: typography.fontSizes.xs,
+    fontSize: typography.fontSizes.sm,
     lineHeight: 19,
     color: '#9B9898',
     paddingVertical: 10,
   },
   pointDetail_body_date: {
+    fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
-    fontSize: typography.fontSizes.sm,
+    fontSize: typography.fontSizes.lg,
     lineHeight: 21,
   },
   pointDetail_body_point: {
+    fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
     fontSize: typography.fontSizes.xl,
     lineHeight: 32,

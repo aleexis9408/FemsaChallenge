@@ -43,8 +43,9 @@ export const styles = StyleSheet.create({
   button_text: {
     color: 'white',
     textAlign: 'center',
+    fontFamily: typography.fontFamily.avenir,
     fontWeight: typography.fontWeights.extrabold,
-    fontSize: typography.fontSizes.sm,
+    fontSize: typography.fontSizes.lg,
     lineHeight: 21,
   },
 });

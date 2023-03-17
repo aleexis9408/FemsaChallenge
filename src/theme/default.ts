@@ -22,6 +22,9 @@ export const typography = {
     '4xl': 36,
     '5xl': 48,
   },
+  fontFamily: {
+    avenir: 'Avenir',
+  },
 };
 
 export const BOX_SHADOW = {

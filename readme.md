@@ -2,27 +2,20 @@
 
 In this challenge you're going to create a basic app with React Native
 
-
 ### Application Android Demo:
+
+
+### Application Screenshot:
 
 <img src="/screenshot/screensht1.png" width=300 /> <img src="/screenshot/screensht2.png" width=300 /> <img src="/screenshot/screensht3.png" width=300 />
 
 
-## Update Snapshot Test
+## Run Unit Testing and Coverage Tests
 
 ```
-npx yarn test
+npx yarn test --coverage
 ```
 
-## Reactotron
-
-- Documentation (https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md)
-
-**Note**: If using an Android device or emulator run the following command to make sure it can connect to Reactotron:
-
-```
-adb reverse tcp:9090 tcp:9090
-```
 
 ## Compile android in release version
 
