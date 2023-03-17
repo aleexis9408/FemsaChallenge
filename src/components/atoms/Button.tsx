@@ -16,11 +16,13 @@ interface Props {
     button?: StyleProp<ViewStyle>;
     button_text?: StyleProp<TextStyle>;
   };
+  testID?: string;
 }
 
-export const Button = ({text, hadleOnPress, customStyle}: Props) => {
+export const Button = ({text, hadleOnPress, customStyle, testID}: Props) => {
   return (
     <TouchableOpacity
+      testID={testID ?? 'Button'}
       style={[styles.button, customStyle?.button]}
       onPress={hadleOnPress}>
       <Text style={[styles.button_text, customStyle?.button_text]}>{text}</Text>

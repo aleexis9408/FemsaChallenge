@@ -21,7 +21,10 @@ export const Product = ({product}: Props) => {
   };
 
   return (
-    <TouchableOpacity style={styles.product} onPress={handleGoToDetail}>
+    <TouchableOpacity
+      style={styles.product}
+      onPress={handleGoToDetail}
+      testID="handleGoToDetail">
       <Image
         style={styles.product_img}
         source={{

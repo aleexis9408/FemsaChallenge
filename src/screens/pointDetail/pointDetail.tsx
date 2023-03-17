@@ -5,7 +5,7 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import {formatDate} from '../../utils/formateDate';
 import {formatPoint} from '../../utils/formatePoint';
 import {Button} from '../../components/atoms/Button';
-import { typography } from '../../theme/default';
+import {typography} from '../../theme/default';
 
 export const PointDetail = () => {
   const route = useRoute();
@@ -19,6 +19,7 @@ export const PointDetail = () => {
         </View>
         <View style={styles.pointDetail_body}>
           <Image
+            testID="pointDetailImage"
             style={styles.pointDetail_body_img}
             source={{
               uri: product?.image,
@@ -36,7 +37,10 @@ export const PointDetail = () => {
           <Text style={styles.pointDetail_body_point}>
             {formatPoint(product?.points)} puntos
           </Text>
-          <Button text="Aceptar" hadleOnPress={() => navigation.goBack()} />
+          <Button
+            text="Aceptar"
+            hadleOnPress={() => navigation.canGoBack() && navigation.goBack()}
+          />
         </View>
       </View>
     </PageTemplate>
