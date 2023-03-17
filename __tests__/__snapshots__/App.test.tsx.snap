@@ -99,6 +99,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
               style={
                 {
                   "backgroundColor": "#F3F3F3",
+                  "flex": 1,
                 }
               }
             >
@@ -106,6 +107,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                 style={
                   {
                     "alignItems": "stretch",
+                    "flex": 1,
                     "flexDirection": "column",
                     "justifyContent": "space-between",
                     "paddingHorizontal": 20,
@@ -117,8 +119,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                   style={
                     {
                       "flexDirection": "column",
-                      "height": "40%",
-                      "width": "100%",
+                      "minHeight": 130,
                     }
                   }
                 >
@@ -223,7 +224,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                 <View
                   style={
                     {
-                      "height": 310,
+                      "flexDirection": "column",
+                      "flexGrow": 3,
                     }
                   }
                 >
@@ -247,7 +249,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       {
                         "backgroundColor": "#FFFFFF",
                         "borderRadius": 20,
-                        "flexGrow": 2,
+                        "flex": 1,
                         "overflow": "hidden",
                         "paddingHorizontal": 10,
                         "paddingVertical": 5,
@@ -555,7 +557,7 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                 <View
                   style={
                     {
-                      "flex": 0.1,
+                      "marginBottom": 20,
                       "marginTop": 20,
                     }
                   }
@@ -768,16 +770,18 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
               style={
                 {
                   "backgroundColor": "#F3F3F3",
+                  "flex": 1,
                 }
               }
             >
               <RCTScrollView
-                contentInsetAdjustmentBehavior="automatic"
-                style={
+                contentContainerStyle={
                   {
                     "backgroundColor": "#F3F3F3",
+                    "flex": 1,
                   }
                 }
+                contentInsetAdjustmentBehavior="automatic"
               >
                 <View>
                   <View
@@ -785,6 +789,9 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                       {
                         "backgroundColor": "white",
                         "flex": 1,
+                        "flexDirection": "column",
+                        "height": "100%",
+                        "justifyContent": "space-between",
                       }
                     }
                   >
@@ -816,28 +823,48 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                     <View
                       style={
                         {
+                          "flex": 1,
+                          "flexGrow": 1,
                           "paddingHorizontal": 30,
                           "paddingVertical": 20,
                         }
                       }
                     >
-                      <Image
-                        source={
-                          {
-                            "uri": "https://loremflickr.com/640/480/transport",
-                          }
-                        }
+                      <View
                         style={
                           {
-                            "borderRadius": 10,
-                            "height": 300,
-                            "overflow": "hidden",
-                            "paddingVertical": 10,
-                            "width": "100%",
+                            "elevation": 5,
+                            "flexGrow": 1,
+                            "shadowColor": "#000000",
+                            "shadowOffset": {
+                              "height": 4,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 0.25,
+                            "shadowRadius": 3.84,
                           }
                         }
-                        testID="pointDetailImage"
-                      />
+                      >
+                        <Image
+                          resizeMode="cover"
+                          source={
+                            {
+                              "uri": "https://loremflickr.com/640/480/transport",
+                            }
+                          }
+                          style={
+                            {
+                              "borderRadius": 10,
+                              "flexGrow": 2,
+                              "minHeight": 250,
+                              "overflow": "hidden",
+                              "paddingVertical": 10,
+                              "width": "100%",
+                            }
+                          }
+                          testID="pointDetailImage"
+                        />
+                      </View>
                       <Text
                         style={
                           {
@@ -846,7 +873,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             "fontSize": 14,
                             "fontWeight": "800",
                             "lineHeight": 19,
-                            "paddingVertical": 10,
+                            "paddingBottom": 20,
+                            "paddingTop": 32,
                           }
                         }
                       >
@@ -873,7 +901,8 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                             "fontSize": 14,
                             "fontWeight": "800",
                             "lineHeight": 19,
-                            "paddingVertical": 10,
+                            "paddingBottom": 20,
+                            "paddingTop": 32,
                           }
                         }
                       >
@@ -893,6 +922,16 @@ exports[`renderRootNavigation navigates to PointDetail screen and renders the co
                         16.434
                          puntos
                       </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flex": 0.1,
+                          "paddingHorizontal": 30,
+                          "paddingVertical": 20,
+                        }
+                      }
+                    >
                       <View
                         accessibilityState={
                           {
@@ -1065,6 +1104,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
               style={
                 {
                   "backgroundColor": "#F3F3F3",
+                  "flex": 1,
                 }
               }
             >
@@ -1072,6 +1112,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                 style={
                   {
                     "alignItems": "stretch",
+                    "flex": 1,
                     "flexDirection": "column",
                     "justifyContent": "space-between",
                     "paddingHorizontal": 20,
@@ -1083,8 +1124,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                   style={
                     {
                       "flexDirection": "column",
-                      "height": "40%",
-                      "width": "100%",
+                      "minHeight": 130,
                     }
                   }
                 >
@@ -1189,7 +1229,8 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                 <View
                   style={
                     {
-                      "height": 310,
+                      "flexDirection": "column",
+                      "flexGrow": 3,
                     }
                   }
                 >
@@ -1213,7 +1254,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                       {
                         "backgroundColor": "#FFFFFF",
                         "borderRadius": 20,
-                        "flexGrow": 2,
+                        "flex": 1,
                         "overflow": "hidden",
                         "paddingHorizontal": 10,
                         "paddingVertical": 5,
@@ -1521,7 +1562,7 @@ exports[`renderRootNavigation renders PointWelcome screen by default 1`] = `
                 <View
                   style={
                     {
-                      "flex": 0.1,
+                      "marginBottom": 20,
                       "marginTop": 20,
                     }
                   }
