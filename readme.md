@@ -6,6 +6,10 @@ In this challenge you're going to create a basic app with React Native
 ### Application Android Demo:
 
 
+![Alt text](/screenshot/screensht1.png?raw=true "screensht1")
+![Alt text](/screenshot/screensht2.png?raw=true "screensht2")
+![Alt text](/screenshot/screensht3.png?raw=true "screensht3")
+
 ## Update Snapshot Test
 
 ```
@@ -25,5 +29,5 @@ adb reverse tcp:9090 tcp:9090
 ## Compile android in release version
 
 ```
-cd android ./gradlew assembleRelease
+cd android && ./gradlew assembleRelease
 ```

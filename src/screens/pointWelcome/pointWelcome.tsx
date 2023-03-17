@@ -13,9 +13,9 @@ export const PointWelcome = () => {
   const {totalPoints, isLoading, data, setTypePoint, typePoint} =
     usePointWelcome();
 
-  if (isLoading) {
+  /* if (isLoading) {
     return <Skeleton />;
-  }
+  } */
 
   return (
     <PageTemplate scrollview={false}>
@@ -41,7 +41,7 @@ export const PointWelcome = () => {
           <Text style={styles.container_pointsCard_title_movement}>
             TUS MOVIMIENTOS
           </Text>
-          <ScrollView>
+          <ScrollView style={styles.container_body_scroll}>
             <ProductList products={data} />
           </ScrollView>
         </View>

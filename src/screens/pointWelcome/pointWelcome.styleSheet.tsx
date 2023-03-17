@@ -1,21 +1,25 @@
 import {StyleSheet} from 'react-native';
-import {BOX_SHADOW, BOX_SHADOW_LOW, typography} from '../../theme/default';
+import {BOX_SHADOW, typography} from '../../theme/default';
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%',
     flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'stretch',
     paddingTop: 20,
     paddingHorizontal: 20,
   },
   container_header: {
-    flexGrow: 2,
+    flexDirection: 'column',
+    width: '100%',
+    height: '40%',
   },
   container_body: {
-    flexGrow: 2,
+    height: 310,
   },
   container_footer: {
-    flexGrow: 1,
+    flex: 0.1,
+    marginTop: 20,
   },
   container_welcome_title: {
     fontWeight: typography.fontWeights.extrabold,
@@ -45,7 +49,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 30,
     marginTop: 20,
     padding: 20,
-    paddingBottom: 50,
+    paddingBottom: 30,
   },
   container_pointsCard_contain_moth: {
     color: '#FFFFFF',
@@ -69,8 +73,15 @@ export const styles = StyleSheet.create({
     color: '#9B9898',
     marginVertical: 20,
   },
+  container_body_scroll: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 20,
+    overflow: 'hidden',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    flexGrow: 2,
+  },
   container_footer_btns: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
